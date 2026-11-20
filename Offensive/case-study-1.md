@@ -43,8 +43,6 @@ The goal of this phase was to understand the attack surface before touching any 
 ### 2.2 Application mapping
 Using Burp Suite's target sitemap and OWASP ZAP's spider, I built a map of reachable endpoints (`/login.php`, `/cart.php`, `/customer_register.php`, `/shop.php`, product pages, `/customer/confirm.php`, the account area, and an `/admin_area/`). ZAP's passive and active scan flagged a large cluster of alerts — most usefully **10 SQL Injection candidates**, an **exposed hidden file**, and several missing security headers — which gave me a prioritized list to confirm manually.
 
-> **Thought process:** Scanners produce noise. I treated every alert as a *hypothesis* to be confirmed by hand, and I prioritized the ones that, if true, would give the biggest impact (injection and access control) over systemic header warnings.
-
 ---
 
 ## 3. Exploitation & Findings
@@ -222,8 +220,6 @@ Per the RoE, no OS-level access or persistence was attempted; the engagement sta
 - Removed test accounts created during registration testing.
 - Removed test checkout/order history generated during payment and IDOR testing.
 - Removed any rogue admin artifacts created while validating the admin takeover.
-
-> **Thought process:** The admin-takeover chain (3.1 → 3.2) is the clearest demonstration of real-world impact: an unauthenticated outsider reaches plaintext credentials and the admin panel. From there, price manipulation (3.5) and payment bypass (3.6) convert access into direct financial loss. That chain is what I'd lead with in a real client debrief.
 
 ---
 

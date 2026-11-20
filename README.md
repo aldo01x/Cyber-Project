@@ -1,7 +1,5 @@
 # Cybersecurity Portfolio — Aldorino Muharram
 
-Welcome to my cybersecurity portfolio. This repository documents my hands-on work in **offensive security (Red Team)**, focusing on web application penetration testing. Each project is written as a professional **case study** covering the full engagement lifecycle: reconnaissance, exploitation, post-exploitation, and reporting. All target data is anonymized and all testing was performed in authorized lab environments only.
-
 ## About Me
 
 Hi! I'm Aldorino, a cybersecurity enthusiast with a focus on **offensive security and web application testing**. I'm currently completing a Cyber Security Bootcamp (Batch 08), where I practice the full penetration testing workflow against deliberately vulnerable lab applications.
@@ -30,12 +28,10 @@ Injection (SQLi), Cross-Site Scripting (XSS), Broken Access Control (IDOR), Busi
 
 ## Projects
 
-### [Project 1: Black-Box Web Application Penetration Test — "DibiShop" E-Commerce Lab](./projects/case-study-1.md)
+### [Project 1: Black-Box Web Application Penetration Test — "DibiShop" E-Commerce Lab](./Offensive/case-study-1.md)
 A full black-box engagement against a deliberately vulnerable e-commerce application. Starting from only an IP address, I mapped the application, identified and exploited **10 vulnerabilities** (3 Critical, 3 High, 3 Moderate, 1 Low), demonstrated business impact, and produced prioritized remediation guidance.
 
 **Highlights:** unauthenticated SQL injection leading to admin takeover, plaintext credential storage, stored XSS, payment-verification bypass, exposed Git repository, and client-side price manipulation.
-
-→ **[Read the full case study](./projects/case-study-1.md)**
 
 ## Learning Journey
 
@@ -49,18 +45,9 @@ A full black-box engagement against a deliberately vulnerable e-commerce applica
 - **Prioritization:** deciding which of 20+ scanner alerts were real and worth manual confirmation.
 - **Reporting clarity:** translating a raw SQLMap dump into a one-line business risk.
 
-### Next steps
-- More machines on Hack The Box and TryHackMe.
-- Deeper study of privilege escalation and post-exploitation.
-- Capture The Flag (CTF) challenges to sharpen speed and creativity.
-
 ## Career Objective
 
 I aim to work as a **Penetration Tester / Offensive Security Analyst**, helping organizations find and fix vulnerabilities before attackers do. My near-term goal is to build a track record of well-documented engagements and earn hands-on certifications in web and network exploitation.
-
-## Contact
-
-- **GitHub:** https://github.com/aldorino
 
 ---
 
